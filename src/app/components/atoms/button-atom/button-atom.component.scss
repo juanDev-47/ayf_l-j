@@ -1,0 +1,84 @@
+@import '../../../../styles/style.scss';
+
+$colors: (
+  active: $purple,
+);
+
+button {
+  all: unset;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  gap: 8px;
+
+  background-color: transparent;
+}
+
+.btn-type-main {
+  border: 2px solid transparent;
+
+  &.btn-state-active {
+    background-color: $purple;
+    color: white;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      background-color: $purple;
+    }
+  }
+
+  &.btn-state-disabled {
+    background-color: $disabled-color;
+    color: white;
+    cursor: default;
+
+    &.btn-type-secondary {
+      background-color: transparent;
+      color: $disabled-color;
+      border-color: $disabled-color;
+    }
+  }
+}
+
+.btn-type-secondary {
+  background-color: transparent;
+  border: 2px solid;
+
+  &.btn-state-active {
+    background-color: $purple;
+    color: white;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      background-color: $purple;
+    }
+  }
+
+  &.btn-state-disabled {
+    background-color: transparent;
+    color: $disabled-color;
+    border-color: $disabled-color;
+  }
+}
+
+.btn-size-s {
+  font-size: map-get($map: $font-sizes, $key: "s");
+  padding: 4px 12px;
+}
+
+.btn-size-m {
+  font-size: map-get($map: $font-sizes, $key: "m");
+  padding: 8px 28px;
+}
+
+.btn-size-l {
+  font-size: map-get($map: $font-sizes, $key: "l");
+  padding: 12px 52px;
+}

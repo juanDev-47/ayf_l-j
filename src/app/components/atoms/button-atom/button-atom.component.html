@@ -1,0 +1,10 @@
+<button
+  [class]="styles"
+  [disabled]="isDisabled"
+  [ngClass]="{
+    'btn-state-active': !isDisabled && state === 'active',
+    'btn-state-disabled': isDisabled
+  }"
+>
+  <ng-content></ng-content>
+</button>
