@@ -6,12 +6,14 @@ import { AtomsModule } from '../atoms/atoms.module';
 import { MoleculesModule } from '../molecules/molecules.module';
 import { OrganismsModule } from '../organisms/organisms.module';
 import { PerfumService } from '../../core/services/perfum/perfum.service';
+import { PerfumsComponent } from './dashboard/perfums/perfums.component';
 
 
 
 @NgModule({
   declarations: [
-    DashboardComponent
+    DashboardComponent,
+    PerfumsComponent
   ],
   imports: [
     CommonModule,

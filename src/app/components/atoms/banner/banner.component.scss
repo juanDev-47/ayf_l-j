@@ -1,0 +1,61 @@
+.banner-container {
+    position: relative;
+    width: 100%;
+    /* Cambiamos la altura fija por una altura proporcional */
+    height: 50vh; /* Puedes ajustar este valor según necesites */
+    overflow: hidden;
+    /* Añadimos estas propiedades para centrar la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene la proporción y cubre el contenedor */
+  object-position: center; /* Centra la imagen */
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  width: 80%; /* Añadimos un ancho máximo al contenido */
+  max-width: 1200px; /* Limitamos el ancho máximo */
+  background-color: rgba(0, 0, 0, 0.3); /* Reducimos un poco la opacidad */
+  border-radius: 10px;
+  z-index: 2; /* Aseguramos que el contenido esté por encima */
+}
+
+.banner-title {
+  font-size: 3vw;
+  margin-bottom: 1vw;
+}
+
+.banner-text {
+  font-size: 1.5vw;
+}
+
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 6vw;
+  }
+
+  .banner-text {
+    font-size: 3vw;
+  }
+  .banner-container {
+    height: 30vh; /* Altura más pequeña en móviles */
+  }
+  
+  .banner-content {
+    width: 90%; /* Más ancho en móviles */
+    padding: 15px;
+  }
+}

@@ -1,22 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
+import { PerfumsComponent } from './components/pages/dashboard/perfums/perfums.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: 'perfums',
     title: 'Dashboard - AyF',
-    component: DashboardComponent,
+    component: PerfumsComponent,
     children: [
       {
         path: '',
-        component: DashboardComponent
+        component: PerfumsComponent
       }
     ]
   },
   {
       path: '',
-      redirectTo: '/dashboard',
+      redirectTo: '/perfums',
       pathMatch: 'full',
   }
 ];
