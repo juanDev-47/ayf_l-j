@@ -1,0 +1,24 @@
+<div class="search-container">
+    <div class="search-content">
+      <h2 class="search-title">Busca tu fragancia</h2>
+      <div class="search-input-container">
+        <input 
+          type="text" 
+          [formControl]="searchControl"
+          class="search-input"
+          placeholder="Ingresa el nombre de la fragancia..."
+          aria-label="Búsqueda de fragancias">
+        <div class="search-icon">
+          <i *ngIf="!isLoading" class="fas fa-search"></i>
+          <div *ngIf="isLoading" class="spinner"></div>
+        </div>
+      </div>
+      
+      <!-- Resultados de búsqueda -->
+      <div class="search-results" *ngIf="searchResults.length > 0">
+        <div class="result-item" *ngFor="let fragrance in searchResults">
+          {{ fragrance.name }}
+        </div>
+      </div>
+    </div>
+  </div>
