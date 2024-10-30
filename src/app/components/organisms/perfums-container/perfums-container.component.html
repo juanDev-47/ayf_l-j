@@ -11,13 +11,7 @@
   <div class="results-section" *ngIf="!isLoading">
     <div *ngFor="let fragrance of fragrances" class="fragrance-card">
       <!-- Contenido de la tarjeta de fragancia -->
-      <div class="card-image">
-        <img
-          src="../../../../assets/images/Emethyst.png"
-          alt="Amethyst perfum"
-        />
-      </div>
-      <h3>{{ fragrance.name }}</h3>
+        <app-card-atom [url]="fragrance.imageUrl" [name]="fragrance.name" />
       <!-- Más detalles de la fragancia -->
     </div>
   </div>

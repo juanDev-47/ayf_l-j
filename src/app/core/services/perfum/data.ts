@@ -5,7 +5,7 @@ export const perfums = [
         brand: "Paris Hilton",
         description: "i like it",
         price: 15000,
-        imageUrl: "https://drive.google.com/file/d/1WcSUyFP9TN_NXIg_Ktz4c2d3yDUvB_VM/view?usp=sharing",
+        imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
         category: "perfums"
       },
@@ -15,7 +15,7 @@ export const perfums = [
         brand: "Britney Spears",
         description: "i like it",
         price: 15000,
-        imageUrl: "https://drive.google.com/file/d/1WcSUyFP9TN_NXIg_Ktz4c2d3yDUvB_VM/view?usp=sharing",
+        imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
         category: "perfums"
       },
@@ -25,97 +25,97 @@ export const perfums = [
         brand: "paco Rabanne",
         description: "i like it",
         price: 15000,
-        imageUrl: "https://drive.google.com/file/d/1WcSUyFP9TN_NXIg_Ktz4c2d3yDUvB_VM/view?usp=sharing",
+        imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
         category: "perfums"
       },
     {
-        id: 1,
+        id: 4,
         name: "Can Cas",
         brand: "Paris Hilton",
         description: "i like it",
         price: 15000,
-        imageUrl: "https://drive.google.com/file/d/1WcSUyFP9TN_NXIg_Ktz4c2d3yDUvB_VM/view?usp=sharing",
+        imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
         category: "perfums"
       },
     {
-        id: 1,
+        id: 5,
         name: "Can Cas",
         brand: "Paris Hilton",
         description: "i like it",
         price: 15000,
-        imageUrl: "https://drive.google.com/file/d/1WcSUyFP9TN_NXIg_Ktz4c2d3yDUvB_VM/view?usp=sharing",
+        imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
         category: "perfums"
       },
-    {
-        id: 1,
+      {
+        id: 6,
         name: "Can Cas",
         brand: "Paris Hilton",
         description: "i like it",
         price: 15000,
-        imageUrl: "https://drive.google.com/file/d/1WcSUyFP9TN_NXIg_Ktz4c2d3yDUvB_VM/view?usp=sharing",
+        imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
         category: "perfums"
       },
-    {
-        id: 1,
+      {
+        id: 7,
         name: "Can Cas",
         brand: "Paris Hilton",
         description: "i like it",
         price: 15000,
-        imageUrl: "https://drive.google.com/file/d/1WcSUyFP9TN_NXIg_Ktz4c2d3yDUvB_VM/view?usp=sharing",
+        imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
         category: "perfums"
       },
-    {
-        id: 1,
+      {
+        id: 8,
         name: "Can Cas",
         brand: "Paris Hilton",
         description: "i like it",
         price: 15000,
-        imageUrl: "https://drive.google.com/file/d/1WcSUyFP9TN_NXIg_Ktz4c2d3yDUvB_VM/view?usp=sharing",
+        imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
         category: "perfums"
       },
-    {
-        id: 1,
+      {
+        id: 9,
         name: "Can Cas",
         brand: "Paris Hilton",
         description: "i like it",
         price: 15000,
-        imageUrl: "https://drive.google.com/file/d/1WcSUyFP9TN_NXIg_Ktz4c2d3yDUvB_VM/view?usp=sharing",
+        imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
         category: "perfums"
       },
-    {
-        id: 1,
+      {
+        id: 10,
         name: "Can Cas",
         brand: "Paris Hilton",
         description: "i like it",
         price: 15000,
-        imageUrl: "https://drive.google.com/file/d/1WcSUyFP9TN_NXIg_Ktz4c2d3yDUvB_VM/view?usp=sharing",
+        imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
         category: "perfums"
       },
-    {
-        id: 1,
+      {
+        id: 11,
         name: "Can Cas",
         brand: "Paris Hilton",
         description: "i like it",
         price: 15000,
-        imageUrl: "https://drive.google.com/file/d/1WcSUyFP9TN_NXIg_Ktz4c2d3yDUvB_VM/view?usp=sharing",
+        imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
         category: "perfums"
       },
-    {
-        id: 1,
+      {
+        id: 12,
         name: "Can Cas",
         brand: "Paris Hilton",
         description: "i like it",
         price: 15000,
-        imageUrl: "https://drive.google.com/file/d/1WcSUyFP9TN_NXIg_Ktz4c2d3yDUvB_VM/view?usp=sharing",
+        imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
         category: "perfums"
       },
