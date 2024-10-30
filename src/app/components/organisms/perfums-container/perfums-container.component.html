@@ -11,7 +11,7 @@
   <div class="results-section" *ngIf="!isLoading">
     <div *ngFor="let fragrance of fragrances" class="fragrance-card">
       <!-- Contenido de la tarjeta de fragancia -->
-        <app-card-atom [url]="fragrance.imageUrl" [name]="fragrance.name" />
+        <app-card-atom [url]="fragrance.imageUrl" [name]="fragrance.name" [brand]="fragrance.brand" [gender]="fragrance.gender" />
       <!-- Más detalles de la fragancia -->
     </div>
   </div>

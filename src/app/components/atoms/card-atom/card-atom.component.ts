@@ -10,6 +10,8 @@ export class CardAtomComponent implements OnInit {
 
   @Input() url?: string = "";
   @Input() name: string = "";
+  @Input() brand?: string = "";
+  @Input() gender?: string = "";
 
   constructor() {}
 

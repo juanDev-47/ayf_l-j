@@ -1,23 +1,25 @@
 export const perfums = [
     {
         id: 1,
-        name: "Can Can",
-        brand: "Paris Hilton",
+        name: "Club de nuit intense",
+        brand: "Armaf",
         description: "i like it",
         price: 15000,
-        imageUrl: "../../../assets/images/Emethyst.png",
+        imageUrl: "../../../assets/images/club_de_nuit_intense.png",
         stock: 4,
-        category: "perfums"
+        category: "perfums",
+        gender: "Hombre"
       },
     {
         id: 2,
-        name: "Fantasy",
-        brand: "Britney Spears",
+        name: "Emethyst",
+        brand: "lattafa",
         description: "i like it",
         price: 15000,
         imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
-        category: "perfums"
+        category: "perfums",
+        gender: "Hombre"
       },
     {
         id: 3,
@@ -25,19 +27,21 @@ export const perfums = [
         brand: "paco Rabanne",
         description: "i like it",
         price: 15000,
-        imageUrl: "../../../assets/images/Emethyst.png",
+        imageUrl: "../../../assets/images/Bvlgari-aqva-marine.png",
         stock: 4,
-        category: "perfums"
+        category: "perfums",
+        gender: "Hombre"
       },
     {
         id: 4,
-        name: "Can Cas",
-        brand: "Paris Hilton",
+        name: "9 PM",
+        brand: "Afnan",
         description: "i like it",
         price: 15000,
-        imageUrl: "../../../assets/images/Emethyst.png",
+        imageUrl: "../../../assets/images/Afnan-9-PM-2.png",
         stock: 4,
-        category: "perfums"
+        category: "perfums",
+        gender: "Hombre"
       },
     {
         id: 5,
@@ -47,7 +51,8 @@ export const perfums = [
         price: 15000,
         imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
-        category: "perfums"
+        category: "perfums",
+        gender: "Hombre"
       },
       {
         id: 6,
@@ -57,7 +62,8 @@ export const perfums = [
         price: 15000,
         imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
-        category: "perfums"
+        category: "perfums",
+        gender: "Hombre"
       },
       {
         id: 7,
@@ -67,7 +73,8 @@ export const perfums = [
         price: 15000,
         imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
-        category: "perfums"
+        category: "perfums",
+        gender: "Hombre"
       },
       {
         id: 8,
@@ -77,7 +84,8 @@ export const perfums = [
         price: 15000,
         imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
-        category: "perfums"
+        category: "perfums",
+        gender: "Hombre"
       },
       {
         id: 9,
@@ -87,7 +95,8 @@ export const perfums = [
         price: 15000,
         imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
-        category: "perfums"
+        category: "perfums",
+        gender: "Hombre"
       },
       {
         id: 10,
@@ -97,7 +106,8 @@ export const perfums = [
         price: 15000,
         imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
-        category: "perfums"
+        category: "perfums",
+        gender: "Hombre"
       },
       {
         id: 11,
@@ -107,7 +117,8 @@ export const perfums = [
         price: 15000,
         imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
-        category: "perfums"
+        category: "perfums",
+        gender: "Hombre"
       },
       {
         id: 12,
@@ -117,6 +128,7 @@ export const perfums = [
         price: 15000,
         imageUrl: "../../../assets/images/Emethyst.png",
         stock: 4,
-        category: "perfums"
+        category: "perfums",
+        gender: "Hombre"
       },
 ]

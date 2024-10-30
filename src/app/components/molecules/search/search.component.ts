@@ -11,6 +11,7 @@ export interface Fragrance {
   imageUrl?: string;
   stock?: number;
   category?: string;
+  gender?: string;
 }
 
 export interface SearchEvent {

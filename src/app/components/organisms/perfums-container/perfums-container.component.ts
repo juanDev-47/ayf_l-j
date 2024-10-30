@@ -10,6 +10,7 @@ export interface Fragrance {
   imageUrl?: string;
   stock?: number;
   category?: string;
+  gender?: string;
 }
 @Component({
   selector: 'app-perfums-container',
@@ -40,7 +41,8 @@ export class PerfumsContainerComponent implements OnInit {
     if (term.trim()) {
       this.perfumsService.searchFragrance(term).subscribe({
         next: (results: Fragrance) => {
-          this.fragrance = results;
+          this.fragrances = [];
+          this.fragrances.push(results);
           // Puedes acceder al componente hijo mediante ViewChild si necesitas
           // actualizar algo específico en él
         },
