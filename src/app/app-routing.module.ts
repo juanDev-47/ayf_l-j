@@ -5,7 +5,7 @@ import { PerfumsComponent } from './components/pages/dashboard/perfums/perfums.c
 
 const routes: Routes = [
   {
-    path: 'perfums',
+    path: '',
     title: 'Dashboard - AyF',
     component: PerfumsComponent,
     children: [
@@ -17,7 +17,7 @@ const routes: Routes = [
   },
   {
       path: '',
-      redirectTo: '/perfums',
+      redirectTo: '',
       pathMatch: 'full',
   }
 ];

@@ -23,8 +23,8 @@ export const perfums = [
       },
     {
         id: 3,
-        name: "Sauvage",
-        brand: "paco Rabanne",
+        name: "Aqva Marine",
+        brand: "Bvlgari",
         description: "i like it",
         price: 15000,
         imageUrl: "../../../assets/images/Bvlgari-aqva-marine.png",
@@ -45,36 +45,36 @@ export const perfums = [
       },
     {
         id: 5,
-        name: "Can Cas",
-        brand: "Paris Hilton",
+        name: "9 AM",
+        brand: "Afnan",
         description: "i like it",
         price: 15000,
-        imageUrl: "../../../assets/images/Emethyst.png",
+        imageUrl: "../../../assets/images/Afnan-9-am.png",
         stock: 4,
         category: "perfums",
-        gender: "Hombre"
+        gender: "Mujer"
       },
       {
         id: 6,
-        name: "Can Cas",
-        brand: "Paris Hilton",
+        name: "Cloud",
+        brand: "Ariana Grande",
         description: "i like it",
         price: 15000,
-        imageUrl: "../../../assets/images/Emethyst.png",
+        imageUrl: "../../../assets/images/Cloud.png",
         stock: 4,
         category: "perfums",
-        gender: "Hombre"
+        gender: "Mujer"
       },
       {
         id: 7,
-        name: "Can Cas",
-        brand: "Paris Hilton",
+        name: "Omnia Coral",
+        brand: "Bvlgari",
         description: "i like it",
         price: 15000,
-        imageUrl: "../../../assets/images/Emethyst.png",
+        imageUrl: "../../../assets/images/bvlgari-omnia-coral.png",
         stock: 4,
         category: "perfums",
-        gender: "Hombre"
+        gender: "Mujer"
       },
       {
         id: 8,
