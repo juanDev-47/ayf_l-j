@@ -3,15 +3,15 @@ import { FormControl } from '@angular/forms';
 import { debounceTime, distinctUntilChanged, Subject, takeUntil } from 'rxjs';
 
 export interface Fragrance {
-  id?: number;
+  id: number;
   name: string;
   brand: string;
-  description?: string;
-  price?: number;
-  imageUrl?: string;
-  stock?: number;
-  category?: string;
-  gender?: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  stock: number;
+  category: string;
+  gender: string;
 }
 
 export interface SearchEvent {

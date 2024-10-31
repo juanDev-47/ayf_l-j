@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { PerfumService } from '@services/perfum/perfum.service';
 
 export interface Fragrance {
-  id?: number;
+  id: number;
   name: string;
   brand: string;
-  description?: string;
-  price?: number;
-  imageUrl?: string;
-  stock?: number;
-  category?: string;
-  gender?: string;
+  description: string;
+  price: number;
+  imageUrl: string;
+  stock: number;
+  category: string;
+  gender: string;
 }
 @Component({
   selector: 'app-perfums-container',
@@ -19,7 +19,6 @@ export interface Fragrance {
 })
 export class PerfumsContainerComponent implements OnInit {
   fragrances: Fragrance[] = [];
-  fragrance: Fragrance = {name: '', brand: ''};
   isLoading = false;
   error: string | null = null;
 
@@ -44,20 +43,39 @@ export class PerfumsContainerComponent implements OnInit {
     this.error = null;
     if (term.trim()) {
       this.perfumsService.searchFragrance(term).subscribe({
-        next: (results: Fragrance) => {
-          this.fragrances = [];
-          this.fragrances.push(results);
+        next: (results: Fragrance[]) => {
+          this.fragrances = [];          
+          this.fragrances = results;
           this.onLoadingChange(false);
           // Puedes acceder al componente hijo mediante ViewChild si necesitas
           // actualizar algo específico en él
         },
-        error: (error: String) => this.handleSearchError(error),
-      });
+        // error: (error: String) => this.handleSearchError(error),
+    });
     } else {
       this.onLoadingChange(false);
       this.getPerfumData();
     }
   }
+
+  // onSearchTerm(term: string) {
+  //   this.error = null;
+  //   if (term.trim()) {
+  //     this.perfumsService.searchFragrance(term).subscribe({
+  //       next: (results: Fragrance) => {
+  //         this.fragrances = [];
+  //         this.fragrances.push(results);
+  //         this.onLoadingChange(false);
+  //         // Puedes acceder al componente hijo mediante ViewChild si necesitas
+  //         // actualizar algo específico en él
+  //       },
+  //       error: (error: String) => this.handleSearchError(error),
+  //     });
+  //   } else {
+  //     this.onLoadingChange(false);
+  //     this.getPerfumData();
+  //   }
+  // }
 
   onLoadingChange(loading: boolean) {
     this.isLoading = loading;
