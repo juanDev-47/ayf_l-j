@@ -58,25 +58,6 @@ export class PerfumsContainerComponent implements OnInit {
     }
   }
 
-  // onSearchTerm(term: string) {
-  //   this.error = null;
-  //   if (term.trim()) {
-  //     this.perfumsService.searchFragrance(term).subscribe({
-  //       next: (results: Fragrance) => {
-  //         this.fragrances = [];
-  //         this.fragrances.push(results);
-  //         this.onLoadingChange(false);
-  //         // Puedes acceder al componente hijo mediante ViewChild si necesitas
-  //         // actualizar algo específico en él
-  //       },
-  //       error: (error: String) => this.handleSearchError(error),
-  //     });
-  //   } else {
-  //     this.onLoadingChange(false);
-  //     this.getPerfumData();
-  //   }
-  // }
-
   onLoadingChange(loading: boolean) {
     this.isLoading = loading;
   }
