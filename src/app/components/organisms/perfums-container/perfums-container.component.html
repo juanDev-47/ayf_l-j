@@ -8,10 +8,15 @@
   ></app-search>
 
   <!-- Sección de resultados -->
-  <div class="results-section" *ngIf="!isLoading">
+  <div class="results-section" *ngIf="!isLoading && fragrances.length > 0">
     <div *ngFor="let fragrance of fragrances" class="fragrance-card">
       <!-- Contenido de la tarjeta de fragancia -->
-        <app-card-atom [url]="fragrance.imageUrl" [name]="fragrance.name" [brand]="fragrance.brand" [gender]="fragrance.gender" />
+      <app-card-atom
+        [url]="fragrance.imageUrl"
+        [name]="fragrance.name"
+        [brand]="fragrance.brand"
+        [gender]="fragrance.gender"
+      />
       <!-- Más detalles de la fragancia -->
     </div>
   </div>

@@ -26,6 +26,10 @@ export class PerfumsContainerComponent implements OnInit {
   constructor(private perfumsService: PerfumService) {}
 
   ngOnInit(): void {
+    this.getPerfumData();
+  }
+
+  getPerfumData(){
     this.perfumsService.searchFragrances().subscribe(
       (data) => {
         this.fragrances = data;
@@ -43,13 +47,15 @@ export class PerfumsContainerComponent implements OnInit {
         next: (results: Fragrance) => {
           this.fragrances = [];
           this.fragrances.push(results);
+          this.onLoadingChange(false);
           // Puedes acceder al componente hijo mediante ViewChild si necesitas
           // actualizar algo específico en él
         },
         error: (error: String) => this.handleSearchError(error),
       });
     } else {
-      this.fragrances = [];
+      this.onLoadingChange(false);
+      this.getPerfumData();
     }
   }
 

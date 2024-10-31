@@ -15,7 +15,8 @@ export class PerfumService {
   }
 
   searchFragrance(term: string): Observable<Fragrance> { 
-    const found = perfums.find((item: Fragrance) => item.name === term);
+    let perfum = term.toLowerCase();
+    const found = perfums.find((item: Fragrance) => item.name.toLowerCase().includes(perfum));
     return found ? of(found) : EMPTY
   }
 

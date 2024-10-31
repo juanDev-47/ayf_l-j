@@ -54,7 +54,7 @@ export class SearchComponent implements OnInit, OnDestroy {
       ).subscribe({
         next: (term) => {
           if (term !== null) {
-            this.isLoading = true;
+            // this.isLoading = true;
             this.loadingChange.emit(true);
             this.searchTermChange.emit(term);
           }
