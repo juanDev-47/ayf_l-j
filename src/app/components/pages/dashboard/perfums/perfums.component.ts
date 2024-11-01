@@ -13,5 +13,10 @@ export class PerfumsComponent implements OnInit {
   ngOnInit(): void {}
 
 
+  contactarWhatsApp(){
+    const numeroTelefono = '3162875421';
+    window.open(`https://wa.me/${numeroTelefono}?text=Hola,%20estoy%20interesado%20en%20un%20perfume.`, '_blank');
+  }
+
 
 }
