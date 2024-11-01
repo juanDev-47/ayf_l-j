@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonAtomComponent } from './button-atom/button-atom.component';
 import { BannerComponent } from './banner/banner.component';
 import { CardAtomComponent } from './card-atom/card-atom.component';
+import { WsbuttonAtomComponent } from './wsbutton-atom/wsbutton-atom.component';
 
 
 
@@ -10,11 +11,12 @@ import { CardAtomComponent } from './card-atom/card-atom.component';
   declarations: [
     ButtonAtomComponent,
     BannerComponent,
-    CardAtomComponent
+    CardAtomComponent,
+    WsbuttonAtomComponent
   ],
   imports: [
     CommonModule
   ],
-  exports: [ButtonAtomComponent,BannerComponent, CardAtomComponent]
+  exports: [ButtonAtomComponent,BannerComponent, CardAtomComponent, WsbuttonAtomComponent]
 })
 export class AtomsModule { }
