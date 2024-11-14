@@ -27,7 +27,7 @@ export class PerfumsContainerComponent implements OnInit {
     { value: 'Hombre', label: 'Hombre' },
     { value: 'Unisex', label: 'Unisex' }
   ];
-  limpiar: boolean = true;
+  limpiar!: boolean;
 
   constructor(private perfumsService: PerfumService) {}
 
@@ -47,12 +47,17 @@ export class PerfumsContainerComponent implements OnInit {
   }
 
   onFiltroChange(valor: string) {
-    this.limpiar = true;
+    this.onClear();
     this.onSearchTerm(valor)
   }
 
+  onClear(){
+    this.limpiar = true;
+    setTimeout(() => this.limpiar = false, 0);
+  }
+
   onSearchTerm(term: string) {
-    this.limpiar = false;
+    
     this.error = null;
     if (term.trim()) {
       this.perfumsService.searchFragrance(term).subscribe({

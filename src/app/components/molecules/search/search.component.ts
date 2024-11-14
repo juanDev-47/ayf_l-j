@@ -31,7 +31,7 @@ export class SearchComponent implements OnInit, OnDestroy {
     @Input() debounceDelay: number = 300;
     
     // Outputs para comunicación con el padre
-    @Input() set clear(valor: boolean) {
+    @Input() set ejecutarAccion(valor: boolean) {
       if (valor) {
         this.clearSearch();
       }
