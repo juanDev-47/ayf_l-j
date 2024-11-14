@@ -4,19 +4,23 @@ import { ButtonAtomComponent } from './button-atom/button-atom.component';
 import { BannerComponent } from './banner/banner.component';
 import { CardAtomComponent } from './card-atom/card-atom.component';
 import { WsbuttonAtomComponent } from './wsbutton-atom/wsbutton-atom.component';
-
-
+import { DropdownAtomComponent } from './dropdown-atom/dropdown-atom.component';
 
 @NgModule({
   declarations: [
     ButtonAtomComponent,
     BannerComponent,
     CardAtomComponent,
-    WsbuttonAtomComponent
+    WsbuttonAtomComponent,
+    DropdownAtomComponent,
   ],
-  imports: [
-    CommonModule
+  imports: [CommonModule],
+  exports: [
+    ButtonAtomComponent,
+    BannerComponent,
+    CardAtomComponent,
+    WsbuttonAtomComponent,
+    DropdownAtomComponent
   ],
-  exports: [ButtonAtomComponent,BannerComponent, CardAtomComponent, WsbuttonAtomComponent]
 })
-export class AtomsModule { }
+export class AtomsModule {}
