@@ -7,9 +7,9 @@
     box-shadow: 3px 3px 10px lightslategray;
     align-items: center;
     justify-content: center;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 100;
   }
   .logo {
     flex: 1;

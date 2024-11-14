@@ -111,7 +111,7 @@ export const perfums = [
   },
   {
     id: 2,
-    name: 'Emethyst',
+    name: 'Amethyst',
     brand: 'lattafa',
     description: 'i like it',
     price: 15000,
@@ -419,7 +419,7 @@ export const perfums = [
   },
   {
     id: 38,
-    name: 'perfumero',
+    name: 'Perfumero',
     brand: "perfumero",
     description: 'i like it',
     price: 15000,
