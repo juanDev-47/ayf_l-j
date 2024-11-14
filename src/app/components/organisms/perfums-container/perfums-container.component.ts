@@ -48,7 +48,8 @@ export class PerfumsContainerComponent implements OnInit {
 
   onFiltroChange(valor: string) {
     this.onClear();
-    this.onSearchTerm(valor)
+    setTimeout(() => this.onSearchTerm(valor), 400);
+    
   }
 
   onClear(){
@@ -57,7 +58,6 @@ export class PerfumsContainerComponent implements OnInit {
   }
 
   onSearchTerm(term: string) {
-    
     this.error = null;
     if (term.trim()) {
       this.perfumsService.searchFragrance(term).subscribe({
