@@ -31,6 +31,11 @@ export class SearchComponent implements OnInit, OnDestroy {
     @Input() debounceDelay: number = 300;
     
     // Outputs para comunicación con el padre
+    @Input() set clear(valor: boolean) {
+      if (valor) {
+        this.clearSearch();
+      }
+    };
     @Output() searchResults = new EventEmitter<SearchEvent>();
     @Output() searchTermChange = new EventEmitter<string>();
     @Output() searchError = new EventEmitter<any>();
@@ -83,6 +88,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   
     // Método para limpiar la búsqueda
     clearSearch() {
+      console.log("prbando el borrado")
       this.searchControl.setValue('');
     }
   

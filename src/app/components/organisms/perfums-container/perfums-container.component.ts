@@ -21,6 +21,13 @@ export class PerfumsContainerComponent implements OnInit {
   fragrances: Fragrance[] = [];
   isLoading = false;
   error: string | null = null;
+  opcionesFiltro = [
+    { value: 'Todos', label: 'Todos' },
+    { value: 'Mujer', label: 'Mujer' },
+    { value: 'Hombre', label: 'Hombre' },
+    { value: 'Unisex', label: 'Unisex' }
+  ];
+  limpiar: boolean = true;
 
   constructor(private perfumsService: PerfumService) {}
 
@@ -39,7 +46,13 @@ export class PerfumsContainerComponent implements OnInit {
     )
   }
 
+  onFiltroChange(valor: string) {
+    this.limpiar = true;
+    this.onSearchTerm(valor)
+  }
+
   onSearchTerm(term: string) {
+    this.limpiar = false;
     this.error = null;
     if (term.trim()) {
       this.perfumsService.searchFragrance(term).subscribe({
@@ -47,8 +60,6 @@ export class PerfumsContainerComponent implements OnInit {
           this.fragrances = [];          
           this.fragrances = results;
           this.onLoadingChange(false);
-          // Puedes acceder al componente hijo mediante ViewChild si necesitas
-          // actualizar algo específico en él
         },
         // error: (error: String) => this.handleSearchError(error),
     });
@@ -66,4 +77,5 @@ export class PerfumsContainerComponent implements OnInit {
     this.error = 'Error al buscar fragancias. Por favor, intenta nuevamente.';
     console.error('Search error:', error);
   }
+
 }

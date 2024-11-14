@@ -1,1 +1,14 @@
-<p>dropdown-atom works!</p>
+<div class="dropdown-wrapper">
+  <select
+    [(ngModel)]="selectedValue"
+    (ngModelChange)="onValueChange($event)"
+    class="dropdown-select"
+    [class.empty]="!selectedValue"
+  >
+    <option value="" disabled selected>{{ placeholder }}</option>
+    <option *ngFor="let option of options" [value]="option.value">
+      {{ option.label }}
+    </option>
+  </select>
+  <div class="dropdown-arrow"></div>
+</div>

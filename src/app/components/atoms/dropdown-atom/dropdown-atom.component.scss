@@ -1,0 +1,122 @@
+.dropdown-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0.5rem 0;
+  /* Asegura que el dropdown no sea más ancho que el viewport en móviles */
+  max-width: min(100%, 300px);
+}
+
+/* Estilo base del select */
+.dropdown-select {
+  width: 100%;
+  padding: 12px 40px 12px 16px; /* Espacio extra a la derecha para la flecha */
+  font-size: clamp(14px, 2.5vw, 16px); /* Texto responsive */
+  line-height: 1.5;
+  color: #333;
+  background-color: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  appearance: none; /* Remueve los estilos nativos del navegador */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Estilo cuando está vacío (placeholder) */
+.dropdown-select.empty {
+  color: #757575;
+}
+
+/* Hover y Focus estados */
+.dropdown-select:hover {
+  border-color: #999;
+}
+
+.dropdown-select:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+/* Flecha personalizada */
+.dropdown-arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666;
+  pointer-events: none; /* Asegura que no interfiera con el click */
+}
+
+/* Estilos para las opciones (aunque el soporte es limitado) */
+.dropdown-select option {
+  padding: 12px;
+  font-size: 16px;
+}
+
+/* Media queries para diferentes tamaños de pantalla */
+@media screen and (max-width: 768px) {
+  .dropdown-wrapper {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .dropdown-select {
+    padding: 10px 35px 10px 12px;
+  }
+}
+
+/* Para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+  .dropdown-select {
+    font-size: 14px;
+    padding: 8px 30px 8px 10px;
+  }
+}
+
+/* Ajustes para pantallas de alta densidad */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .dropdown-select {
+    font-weight: 400; /* Mejor legibilidad en pantallas retina */
+  }
+}
+
+/* Soporte para modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .dropdown-select {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border-color: #404040;
+  }
+
+  .dropdown-select.empty {
+    color: #a0a0a0;
+  }
+
+  .dropdown-select:hover {
+    border-color: #505050;
+  }
+
+  .dropdown-arrow {
+    border-top-color: #a0a0a0;
+  }
+}
+
+/* Estilos para dispositivos táctiles */
+@media (hover: none) {
+  .dropdown-select {
+    padding: 12px 40px 12px 16px; /* Botones más grandes para touch */
+  }
+}
+
+/* Previene el zoom en iOS */
+@supports (-webkit-touch-callout: none) {
+  .dropdown-select {
+    font-size: 16px;
+  }
+}

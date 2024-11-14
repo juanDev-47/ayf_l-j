@@ -5,8 +5,15 @@
     (searchTermChange)="onSearchTerm($event)"
     (searchError)="handleSearchError($event)"
     (loadingChange)="onLoadingChange($event)"
+    [clear]="limpiar"
   ></app-search>
 
+  
+  <app-dropdown-atom
+    [placeholder]="'Genero'"
+    [options]="opcionesFiltro"
+    (valueChange)="onFiltroChange($event)"
+  ></app-dropdown-atom>
   <!-- Sección de resultados -->
   <div class="results-section" *ngIf="!isLoading && fragrances.length > 0">
     <div *ngFor="let fragrance of fragrances" class="fragrance-card">

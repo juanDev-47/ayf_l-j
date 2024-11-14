@@ -7,6 +7,7 @@ import { MoleculesModule } from '../molecules/molecules.module';
 import { OrganismsModule } from '../organisms/organisms.module';
 import { PerfumService } from '../../core/services/perfum/perfum.service';
 import { PerfumsComponent } from './dashboard/perfums/perfums.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -16,6 +17,7 @@ import { PerfumsComponent } from './dashboard/perfums/perfums.component';
     PerfumsComponent
   ],
   imports: [
+    FormsModule,
     CommonModule,
     RouterModule,
     AtomsModule,

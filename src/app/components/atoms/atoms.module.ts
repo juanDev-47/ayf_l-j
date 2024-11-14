@@ -5,6 +5,7 @@ import { BannerComponent } from './banner/banner.component';
 import { CardAtomComponent } from './card-atom/card-atom.component';
 import { WsbuttonAtomComponent } from './wsbutton-atom/wsbutton-atom.component';
 import { DropdownAtomComponent } from './dropdown-atom/dropdown-atom.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { DropdownAtomComponent } from './dropdown-atom/dropdown-atom.component';
     WsbuttonAtomComponent,
     DropdownAtomComponent,
   ],
-  imports: [CommonModule],
+  imports: [FormsModule,CommonModule],
   exports: [
     ButtonAtomComponent,
     BannerComponent,

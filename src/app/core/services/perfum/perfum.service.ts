@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Fragrance } from 'src/app/components/molecules/search/search.component';
-import { EMPTY, merge, Observable, of } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { perfums } from './data';
 
 @Injectable({
@@ -17,10 +17,13 @@ export class PerfumService {
   searchFragrance(term: string): Observable<Fragrance[]> { 
     let search = term.toLowerCase();
 
-    let filteres = perfums.filter((perfum: Fragrance ) => perfum.name.toLowerCase().includes(search));
-    console.log(filteres)
     
-    let found = perfums.find((perfum: Fragrance ) => perfum.name.toLowerCase().includes(search));
+    if(search == "todos") return of(perfums);
+
+    let filteres = perfums.filter((perfum: Fragrance ) => (perfum.name.toLowerCase().includes(search) || perfum.gender.toLowerCase().includes(search)));
+    
+    
+    // let found = perfums.find((perfum: Fragrance ) => perfum.name.toLowerCase().includes(search));
 
     return of(filteres) as Observable<Fragrance[]>;
   }
