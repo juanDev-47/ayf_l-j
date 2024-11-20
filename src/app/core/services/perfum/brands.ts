@@ -24,4 +24,5 @@ export const brand = [
     { value: 'Montale Paris', label: 'Montale Paris' },
     { value: 'Guess', label: 'Guess' },
     { value: 'Creed', label: 'Creed' },
+    { value: 'Valentino', label: 'Valentino' },
 ]

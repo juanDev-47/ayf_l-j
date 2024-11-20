@@ -13,7 +13,7 @@ export const perfums = [
   {
     id: 12,
     name: 'Valentino born in roma',
-    brand: 'Paris Hilton',
+    brand: 'Valentino',
     description: 'i like it',
     price: 15000,
     imageUrl: '../../../assets/images/Valentino_born_in_roma.png',
