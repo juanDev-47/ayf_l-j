@@ -27,6 +27,11 @@
   margin-top: 20px;
 }
 
+.dropdown-container {
+  display: inline-flex;
+  gap: 10px;
+}
+
 @media (max-width: 768px) {
   .fragrance-container {
     padding: 10px;
@@ -47,5 +52,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
   }
 }

@@ -255,7 +255,7 @@ export const perfums = [
   {
     id: 18,
     name: 'Issey Miyake',
-    brand: "L'Eau d'Issey",
+    brand: "LEau dIssey",
     description: 'i like it',
     price: 15000,
     imageUrl: '../../../assets/images/Issey_miyake.png',
@@ -442,7 +442,7 @@ export const perfums = [
   {
     id: 32,
     name: 'Guess',
-    brand: "Eau De Parfum",
+    brand: "Guess",
     description: 'i like it',
     price: 15000,
     imageUrl: '../../../assets/images/guess.png',

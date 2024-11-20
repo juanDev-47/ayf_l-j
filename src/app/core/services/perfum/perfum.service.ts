@@ -20,10 +20,8 @@ export class PerfumService {
     
     if(search == "todos") return of(perfums);
 
-    let filteres = perfums.filter((perfum: Fragrance ) => (perfum.name.toLowerCase().includes(search) || perfum.gender.toLowerCase().includes(search)));
-    
-    
-    // let found = perfums.find((perfum: Fragrance ) => perfum.name.toLowerCase().includes(search));
+    let filteres = perfums.filter((perfum: Fragrance ) => (perfum.name.toLowerCase().includes(search) || perfum.gender.toLowerCase().includes(search) || perfum.brand.toLowerCase().includes(search) ));
+
 
     return of(filteres) as Observable<Fragrance[]>;
   }

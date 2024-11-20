@@ -8,12 +8,23 @@
     [ejecutarAccion]="limpiar"
   ></app-search>
 
-  
-  <app-dropdown-atom
-    [placeholder]="'Genero'"
-    [options]="opcionesFiltro"
-    (valueChange)="onFiltroChange($event)"
-  ></app-dropdown-atom>
+  <div class="dropdown-container">
+
+    <app-dropdown-atom
+      [placeholder]="'Marca'"
+      [options]="filtroMarcas"
+      (valueChange)="onFiltroChange($event)"
+    ></app-dropdown-atom>
+
+    <div class="">
+      <app-dropdown-atom
+      [placeholder]="'Genero'"
+      [options]="opcionesFiltro"
+      (valueChange)="onFiltroChange($event)"
+    ></app-dropdown-atom>
+    </div>
+  </div>
+
   <!-- Sección de resultados -->
   <div class="results-section" *ngIf="!isLoading && fragrances.length > 0">
     <div *ngFor="let fragrance of fragrances" class="fragrance-card">

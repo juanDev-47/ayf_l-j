@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PerfumService } from '@services/perfum/perfum.service';
+import { gender } from '@services/perfum/gender';
+import { brand } from '@services/perfum/brands';
 
 export interface Fragrance {
   id: number;
@@ -21,12 +23,8 @@ export class PerfumsContainerComponent implements OnInit {
   fragrances: Fragrance[] = [];
   isLoading = false;
   error: string | null = null;
-  opcionesFiltro = [
-    { value: 'Todos', label: 'Todos' },
-    { value: 'Mujer', label: 'Mujer' },
-    { value: 'Hombre', label: 'Hombre' },
-    { value: 'Unisex', label: 'Unisex' }
-  ];
+  opcionesFiltro = gender;
+  filtroMarcas = brand;
   limpiar!: boolean;
 
   constructor(private perfumsService: PerfumService) {}
