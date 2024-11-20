@@ -9,19 +9,20 @@
   ></app-search>
 
   <div class="dropdown-container">
-
-    <app-dropdown-atom
-      [placeholder]="'Marca'"
-      [options]="filtroMarcas"
-      (valueChange)="onFiltroChange($event)"
-    ></app-dropdown-atom>
-
-    <div class="">
+    <div class="dropdown">
       <app-dropdown-atom
-      [placeholder]="'Genero'"
-      [options]="opcionesFiltro"
-      (valueChange)="onFiltroChange($event)"
-    ></app-dropdown-atom>
+        [placeholder]="'Marca'"
+        [options]="filtroMarcas"
+        (valueChange)="onFiltroChange($event)"
+      ></app-dropdown-atom>
+    </div>
+
+    <div class="dropdown">
+      <app-dropdown-atom
+        [placeholder]="'Genero'"
+        [options]="opcionesFiltro"
+        (valueChange)="onFiltroChange($event)"
+      ></app-dropdown-atom>
     </div>
   </div>
 
