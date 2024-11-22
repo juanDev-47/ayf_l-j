@@ -25,4 +25,9 @@ export const brand = [
     { value: 'Guess', label: 'Guess' },
     { value: 'Creed', label: 'Creed' },
     { value: 'Valentino', label: 'Valentino' },
+    { value: 'Bharara Beuty', label: 'Bharara Beuty' },
+    { value: 'Ralph Lauren', label: 'Ralph Lauren' },
+    { value: 'Versace', label: 'Versace' },
+    { value: 'Perry Ellis', label: 'Perry Ellis' },
+    { value: 'Jean Paul Gaultier', label: 'Jean Paul Gaultier' },
 ]
