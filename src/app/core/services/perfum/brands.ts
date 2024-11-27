@@ -1,5 +1,6 @@
 export const brand = [
     { value: 'Todos', label: 'Todos' },
+    { value: 'Perfumero', label: 'Perfumero' },
     { value: 'Lattafa', label: 'Lattafa' },
     { value: 'Armaf', label: 'Armaf' },
     { value: 'Carolina Herrera', label: 'Carolina Herrera' },
@@ -30,4 +31,6 @@ export const brand = [
     { value: 'Versace', label: 'Versace' },
     { value: 'Perry Ellis', label: 'Perry Ellis' },
     { value: 'Jean Paul Gaultier', label: 'Jean Paul Gaultier' },
+    { value: 'Orientica', label: 'Orientica' },
+    { value: 'Il Roso', label: 'Il Roso' },
 ]
