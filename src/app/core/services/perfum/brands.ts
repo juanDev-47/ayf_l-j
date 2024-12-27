@@ -33,4 +33,5 @@ export const brand = [
     { value: 'Jean Paul Gaultier', label: 'Jean Paul Gaultier' },
     { value: 'Orientica', label: 'Orientica' },
     { value: 'Il Roso', label: 'Il Roso' },
+    { value: 'Yanbal', label: 'Yanbal' },
 ]
