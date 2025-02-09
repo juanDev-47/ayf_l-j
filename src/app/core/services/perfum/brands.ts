@@ -3,6 +3,7 @@ export const brand = [
     { value: 'Perfumero', label: 'Perfumero' },
     { value: 'Lattafa', label: 'Lattafa' },
     { value: 'Armaf', label: 'Armaf' },
+    { value: 'Antonio Banderas', label: 'Antonio Banderas' },
     { value: 'Carolina Herrera', label: 'Carolina Herrera' },
     { value: 'Bvlgary', label: 'Bvlgary' },
     { value: 'Bond', label: 'Bond' },
